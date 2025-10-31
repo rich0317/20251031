@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return JSONResponse(content={"message": "Hello, FastAPI!"})
+    return JSONResponse(content={"message": "Hello! FastAPI!"})
 
 
 
