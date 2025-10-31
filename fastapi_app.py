@@ -9,10 +9,7 @@ def read_root():
     return JSONResponse(content={"message": "Hello, FastAPI!"})
 
 
-# 新增 /test1 節點
-@app.get("/test1")
-def test1():
-     return JSONResponse(content={"message": "This is test1 endpoint."})
+
 
 
 if __name__ == "__main__":
