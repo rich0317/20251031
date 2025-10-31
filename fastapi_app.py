@@ -7,10 +7,13 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return JSONResponse(content={"message": "Hello, FastAPI!"})
+    # ...existing code...
 
-
-
-
+# 新增 /test1 節點
+@app.get("/test1")
+def test1():
+        return JSONResponse(content={"message": "This is test1 endpoint."})
+    # ...existing code...
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
