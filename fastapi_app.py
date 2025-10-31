@@ -8,9 +8,6 @@ app = FastAPI()
 def read_root():
     return JSONResponse(content={"message": "Hello, FastAPI!"})
 
-@app.get("/test1")
-def test1():
-    return JSONResponse(content={"message": "This is test1"})
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
